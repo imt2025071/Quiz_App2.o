@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="24dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/teacher_config_title"
+        android:textColor="@color/textColor"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Subject Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subject_prompt"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="8dp"/>
+        
+    <EditText
+        android:id="@+id/etSubject"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cardColor"
+        android:hint="e.g. Mathematics"
+        android:textColorHint="@color/inputBorder"
+        android:textColor="@color/textColor"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Number of Questions Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/questions_prompt"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="8dp"/>
+        
+    <EditText
+        android:id="@+id/etNumQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:background="@color/cardColor"
+        android:hint="e.g. 10"
+        android:textColorHint="@color/inputBorder"
+        android:textColor="@color/textColor"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Timer Input -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_prompt"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="8dp"/>
+        
+    <EditText
+        android:id="@+id/etTimerMinutes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:background="@color/cardColor"
+        android:hint="e.g. 15"
+        android:textColorHint="@color/inputBorder"
+        android:textColor="@color/textColor"
+        android:padding="12dp"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnSubmitConfig"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/primaryColor"
+        android:text="@string/start_quiz_btn"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
