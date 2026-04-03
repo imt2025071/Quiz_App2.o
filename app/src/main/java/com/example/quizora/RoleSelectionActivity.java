@@ -28,8 +28,8 @@ public class RoleSelectionActivity extends Activity {
         btnStudent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Placeholder for student view
-                Toast.makeText(RoleSelectionActivity.this, "Student interface coming soon!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(RoleSelectionActivity.this, StudentQuizActivity.class);
+                startActivity(intent);
             }
         });
     }

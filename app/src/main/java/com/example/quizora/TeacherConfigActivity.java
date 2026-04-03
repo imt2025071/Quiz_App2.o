@@ -1,6 +1,7 @@
 package com.example.quizora;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -39,7 +40,9 @@ public class TeacherConfigActivity extends Activity {
                             "Quiz Saved! Subject: " + subject + ", " + numQ + " Qs, " + timer + " mins.", 
                             Toast.LENGTH_LONG).show();
                             
-                    // Here you would normally proceed to the question creation UI
+                    // Here you would proceed to the question creation UI
+                    Intent intent = new Intent(TeacherConfigActivity.this, AddQuestionActivity.class);
+                    startActivity(intent);
                     finish();
                 }
             }
