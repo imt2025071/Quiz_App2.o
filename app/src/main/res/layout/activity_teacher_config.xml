@@ -24,14 +24,12 @@
         android:textColor="@color/textColor"
         android:layout_marginBottom="8dp"/>
         
-    <EditText
-        android:id="@+id/etSubject"
+    <Spinner
+        android:id="@+id/spinnerSubject"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/cardColor"
-        android:hint="e.g. Mathematics"
-        android:textColorHint="@color/inputBorder"
-        android:textColor="@color/textColor"
+        android:entries="@array/subject_list"
         android:padding="12dp"
         android:layout_marginBottom="24dp"/>
 

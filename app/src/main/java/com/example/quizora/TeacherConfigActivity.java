@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class TeacherConfigActivity extends Activity {
 
-    private EditText etSubject, etNumQuestions, etTimerMinutes;
+    private Spinner spinnerSubject;
+    private EditText etNumQuestions, etTimerMinutes;
     private Button btnSubmitConfig;
 
     @Override
@@ -18,7 +20,7 @@ public class TeacherConfigActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_config);
 
-        etSubject = findViewById(R.id.etSubject);
+        spinnerSubject = findViewById(R.id.spinnerSubject);
         etNumQuestions = findViewById(R.id.etNumQuestions);
         etTimerMinutes = findViewById(R.id.etTimerMinutes);
         btnSubmitConfig = findViewById(R.id.btnSubmitConfig);
@@ -26,7 +28,7 @@ public class TeacherConfigActivity extends Activity {
         btnSubmitConfig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String subject = etSubject.getText().toString().trim();
+                String subject = spinnerSubject.getSelectedItem().toString();
                 String numQStr = etNumQuestions.getText().toString().trim();
                 String timerStr = etTimerMinutes.getText().toString().trim();
 

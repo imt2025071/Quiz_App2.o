@@ -8,4 +8,13 @@
     <string name="questions_prompt">Number of Questions</string>
     <string name="timer_prompt">Timer (in minutes)</string>
     <string name="start_quiz_btn">Create Quiz</string>
+    <string-array name="subject_list">
+        <item>Digital Electronics</item>
+        <item>Data Structure</item>
+        <item>Mobile Application Technology</item>
+        <item>Probability and Statistics</item>
+        <item>Hardware Workshop</item>
+        <item>Object Oriented Programming</item>
+        <item>Ecology and Environment Science</item>
+    </string-array>
 </resources>
