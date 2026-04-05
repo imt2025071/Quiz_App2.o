@@ -63,7 +63,7 @@ public class StudentQuizActivity extends Activity {
         if (currentQuestionIndex < questionList.size()) {
             Question q = questionList.get(currentQuestionIndex);
             tvQuestionCount.setText("Question " + (currentQuestionIndex + 1) + " of " + questionList.size());
-            tvQuestionText.setText(q.getQuestionText());
+            tvQuestionText.setText((currentQuestionIndex + 1) + ") " + q.getQuestionText());
             rbOptionA.setText(q.getOptionA());
             rbOptionB.setText(q.getOptionB());
             rbOptionC.setText(q.getOptionC());

@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2784F5"
+    android:background="@android:color/black"
     android:fillViewport="true">
 
     <LinearLayout
@@ -16,8 +16,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add Question"
-            android:textSize="28sp"
-            android:textColor="#333333"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
             android:textStyle="bold"
             android:layout_marginBottom="24dp" />
 
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@android:color/white"
+            android:background="@android:color/black"
             android:padding="20dp"
             android:elevation="4dp"
             android:layout_marginBottom="24dp">
@@ -37,16 +37,18 @@
                 android:hint="Type the question here..."
                 android:textSize="18sp"
                 android:padding="12dp"
-                android:background="#2784F5"
+                android:background="@color/primaryColorTranslucent"
+                android:textColor="@android:color/white"
+                android:textColorHint="#AAAAAA"
                 android:layout_marginBottom="16dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Options"
-                android:textSize="14sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="#888888"
+                android:textColor="@android:color/white"
                 android:layout_marginBottom="8dp" />
 
             <EditText
@@ -55,7 +57,9 @@
                 android:layout_height="wrap_content"
                 android:hint="Option A"
                 android:padding="12dp"
-                android:background="#2784F5"
+                android:background="@color/primaryColorTranslucent"
+                android:textColor="@android:color/white"
+                android:textColorHint="#AAAAAA"
                 android:layout_marginBottom="12dp" />
 
             <EditText
@@ -64,7 +68,9 @@
                 android:layout_height="wrap_content"
                 android:hint="Option B"
                 android:padding="12dp"
-                android:background="#2784F5"
+                android:background="@color/primaryColorTranslucent"
+                android:textColor="@android:color/white"
+                android:textColorHint="#AAAAAA"
                 android:layout_marginBottom="12dp" />
 
             <EditText
@@ -73,7 +79,9 @@
                 android:layout_height="wrap_content"
                 android:hint="Option C"
                 android:padding="12dp"
-                android:background="#2784F5"
+                android:background="@color/primaryColorTranslucent"
+                android:textColor="@android:color/white"
+                android:textColorHint="#AAAAAA"
                 android:layout_marginBottom="12dp" />
 
             <EditText
@@ -82,16 +90,18 @@
                 android:layout_height="wrap_content"
                 android:hint="Option D"
                 android:padding="12dp"
-                android:background="#2784F5"
+                android:background="@color/primaryColorTranslucent"
+                android:textColor="@android:color/white"
+                android:textColorHint="#AAAAAA"
                 android:layout_marginBottom="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Correct Answer"
-                android:textSize="14sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="#888888"
+                android:textColor="@android:color/white"
                 android:layout_marginBottom="8dp" />
 
             <EditText
@@ -100,8 +110,9 @@
                 android:layout_height="wrap_content"
                 android:hint="e.g. A, B, C, D or Exact Text"
                 android:padding="12dp"
-                android:background="#2784F5"
-                android:textColor="#005C8A"
+                android:background="@color/primaryColorTranslucent"
+                android:textColor="@android:color/white"
+                android:textColorHint="#AAAAAA"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -113,6 +124,7 @@
             android:text="Save Question"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:backgroundTint="#2784F5"
             android:textColor="@android:color/white"
             android:layout_marginBottom="12dp" />
 
@@ -123,7 +135,7 @@
             android:text="Finish Adding Questions"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:backgroundTint="#888888"
+            android:backgroundTint="#2784F5"
             android:textColor="@android:color/white" />
 
     </LinearLayout>

@@ -4,13 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="32dp">
+    android:padding="32dp"
+    android:background="@android:color/black">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quiz Completed!"
         android:textSize="28sp"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
         android:layout_marginBottom="24dp" />
 
@@ -20,12 +22,17 @@
         android:layout_height="wrap_content"
         android:text="Your Score: 0/0"
         android:textSize="24sp"
+        android:textColor="@android:color/white"
         android:layout_marginBottom="32dp" />
 
     <Button
         android:id="@+id/btnReturnHome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#2784F5"
         android:text="Return to Home" />
 
 </LinearLayout>
