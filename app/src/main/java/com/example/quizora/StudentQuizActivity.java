@@ -18,6 +18,7 @@ public class StudentQuizActivity extends Activity {
     private RadioGroup rgOptions;
     private RadioButton rbOptionA, rbOptionB, rbOptionC, rbOptionD;
     private Button btnNextQuestion;
+    private View llQuestionContainer;
 
     private DatabaseHelper dbHelper;
     private List<Question> questionList;
@@ -37,6 +38,7 @@ public class StudentQuizActivity extends Activity {
         rbOptionC = findViewById(R.id.rbOptionC);
         rbOptionD = findViewById(R.id.rbOptionD);
         btnNextQuestion = findViewById(R.id.btnNextQuestion);
+        llQuestionContainer = findViewById(R.id.llQuestionContainer);
 
         dbHelper = new DatabaseHelper(this);
         questionList = dbHelper.getAllQuestions();
@@ -87,15 +89,51 @@ public class StudentQuizActivity extends Activity {
         }
 
         RadioButton selectedRadioButton = findViewById(selectedId);
-        String selectedAnswer = selectedRadioButton.getText().toString();
+        String selectedAnswer = selectedRadioButton.getText().toString().trim();
 
         Question currentQuestion = questionList.get(currentQuestionIndex);
-        if (selectedAnswer.equals(currentQuestion.getCorrectAnswer())) {
+        String correctAnswer = currentQuestion.getCorrectAnswer().trim();
+
+        boolean isCorrect = false;
+        if (selectedAnswer.equalsIgnoreCase(correctAnswer)) {
+            isCorrect = true;
+        } else if (correctAnswer.equalsIgnoreCase("A") && selectedId == R.id.rbOptionA) {
+            isCorrect = true;
+        } else if (correctAnswer.equalsIgnoreCase("B") && selectedId == R.id.rbOptionB) {
+            isCorrect = true;
+        } else if (correctAnswer.equalsIgnoreCase("C") && selectedId == R.id.rbOptionC) {
+            isCorrect = true;
+        } else if (correctAnswer.equalsIgnoreCase("D") && selectedId == R.id.rbOptionD) {
+            isCorrect = true;
+        }
+
+        if (isCorrect) {
             score++;
         }
 
         currentQuestionIndex++;
-        displayQuestion();
+        
+        if (currentQuestionIndex < questionList.size()) {
+            // Fade out, update, fade in
+            llQuestionContainer.animate()
+                    .alpha(0f)
+                    .translationX(-50f)
+                    .setDuration(250)
+                    .withEndAction(new Runnable() {
+                        @Override
+                        public void run() {
+                            displayQuestion();
+                            llQuestionContainer.setTranslationX(50f);
+                            llQuestionContainer.animate()
+                                    .alpha(1f)
+                                    .translationX(0f)
+                                    .setDuration(250)
+                                    .start();
+                        }
+                    }).start();
+        } else {
+            finishQuiz();
+        }
     }
 
     private void finishQuiz() {
