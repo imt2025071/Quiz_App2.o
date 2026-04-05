@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#27CCF5"
+    android:background="@android:color/black"
     android:fillViewport="true">
 
     <LinearLayout
@@ -37,7 +37,7 @@
                 android:hint="Type the question here..."
                 android:textSize="18sp"
                 android:padding="12dp"
-                android:background="#27CCF5"
+                android:background="#2784F5"
                 android:layout_marginBottom="16dp" />
 
             <TextView
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Option A"
                 android:padding="12dp"
-                android:background="#27CCF5"
+                android:background="#2784F5"
                 android:layout_marginBottom="12dp" />
 
             <EditText
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Option B"
                 android:padding="12dp"
-                android:background="#27CCF5"
+                android:background="#2784F5"
                 android:layout_marginBottom="12dp" />
 
             <EditText
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Option C"
                 android:padding="12dp"
-                android:background="#27CCF5"
+                android:background="#2784F5"
                 android:layout_marginBottom="12dp" />
 
             <EditText
@@ -82,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Option D"
                 android:padding="12dp"
-                android:background="#27CCF5"
+                android:background="#2784F5"
                 android:layout_marginBottom="20dp" />
 
             <TextView
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:hint="e.g. A, B, C, D or Exact Text"
                 android:padding="12dp"
-                android:background="#27CCF5"
+                android:background="#2784F5"
                 android:textColor="#005C8A"
                 android:textStyle="bold" />
 
@@ -113,6 +113,7 @@
             android:text="Save Question"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:backgroundTint="#2784F5"
             android:textColor="@android:color/white"
             android:layout_marginBottom="12dp" />
 
@@ -123,7 +124,7 @@
             android:text="Finish Adding Questions"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:backgroundTint="#888888"
+            android:backgroundTint="#2784F5"
             android:textColor="@android:color/white" />
 
     </LinearLayout>

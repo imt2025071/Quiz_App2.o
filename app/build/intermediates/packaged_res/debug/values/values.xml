@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subject_list">
+        <item>Digital Electronics</item>
+        <item>Data Structure</item>
+        <item>Mobile Application Technology</item>
+        <item>Probability and Statistics</item>
+        <item>Hardware Workshop</item>
+        <item>Object Oriented Programming</item>
+        <item>Ecology and Environment Science</item>
+    </string-array>
+    <color name="backgroundColor">#121212</color>
+    <color name="cardColor">#1E1E1E</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="inputBorder">#808080</color>
+    <color name="primaryColor">#2784F5</color>
+    <color name="primaryColorTranslucent">#4D2784F5</color>
+    <color name="primaryDarkColor">#3700B3</color>
+    <color name="textColor">#FFFFFF</color>
+    <string name="app_name">Quizora</string>
+    <string name="iam_student">I am a student</string>
+    <string name="iam_teacher">I am a teacher</string>
+    <string name="questions_prompt">Number of Questions</string>
+    <string name="start_quiz_btn">Create Quiz</string>
+    <string name="subject_prompt">Select Subject</string>
+    <string name="teacher_config_title">Teacher Setup</string>
+    <string name="timer_prompt">Timer (in minutes)</string>
+    <string name="welcome_message">Welcome To Quizora</string>
+</resources>
